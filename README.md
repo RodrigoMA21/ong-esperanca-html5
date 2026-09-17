@@ -9,6 +9,13 @@ acessibilidade, organização estrutural e validação de formulários.
 - `projetos.html` — projetos sociais, doações e voluntariado.
 - `cadastro.html` — formulário de cadastro com validações nativas HTML5.
 
+## Tecnologias
+- `HTML5`
+- `HTML5 Semântico`
+- `Formulários e validações nativas`
+- `Acessibilidade`
+- `W3C Validator`
+
 ## Estrutura
 
 ```text
@@ -18,3 +25,4 @@ ong-esperanca-html5/
 ├── cadastro.html
 └── img/
     └── ong-esperanca.jpg
+
