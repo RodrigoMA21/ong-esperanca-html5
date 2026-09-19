@@ -106,3 +106,122 @@ textarea {
 button {
     cursor: pointer;
 }
+/* =========================================================
+   CONTAINER E GRID DE 12 COLUNAS
+   ========================================================= */
+
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-6);
+}
+
+/* Áreas principais do layout */
+
+.grid-full {
+    grid-column: 1 / -1;
+}
+
+.grid-main {
+    grid-column: span 8;
+}
+
+.grid-sidebar {
+    grid-column: span 4;
+}
+
+.grid-half {
+    grid-column: span 6;
+}
+
+.grid-third {
+    grid-column: span 4;
+}
+
+/* =========================================================
+   SEÇÕES E CONTEÚDO
+   ========================================================= */
+
+main {
+    padding-block: var(--space-12);
+}
+
+section {
+    margin-bottom: var(--space-12);
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+}
+
+.section-text {
+    margin-bottom: var(--space-6);
+    color: var(--color-text-muted);
+}
+
+/* =========================================================
+   RESPONSIVIDADE — BREAKPOINTS
+   ========================================================= */
+
+/* 360px — smartphones pequenos */
+
+@media (max-width: 360px) {
+    .container {
+        width: min(100% - 1rem, 1200px);
+    }
+
+    main {
+        padding-block: var(--space-8);
+    }
+
+    .page-grid {
+        gap: var(--space-4);
+    }
+}
+
+
+/* 576px — smartphones maiores */
+
+@media (min-width: 361px) and (max-width: 575px) {
+    .container {
+        width: min(100% - 1.5rem, 1200px);
+    }
+}
+
+
+/* 768px — tablets */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        width: min(100% - 2rem, 1200px);
+    }
+}
+
+
+/* 1024px — desktops menores / tablets grandes */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: min(100% - 2.5rem, 1200px);
+    }
+}
+
+
+/* 1440px — telas grandes */
+
+@media (min-width: 1440px) {
+    .container {
+        width: min(100% - 3rem, 1320px);
+    }
+}
