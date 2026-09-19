@@ -401,6 +401,11 @@ section:last-child {
     background-color: var(--color-primary-light);
 }
 
+.menu-toggle:focus-visible + .menu-button {
+    outline: 3px solid rgba(46, 125, 91, 0.25);
+    outline-offset: 2px;
+}
+
 .menu-button span {
     display: block;
 
