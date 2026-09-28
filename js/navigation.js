@@ -6,32 +6,24 @@ import {
 
 const routes = {
     "/": renderHome,
-    "/index.html": renderHome,
-    "/html/projetos.html": renderProjects,
-    "/html/cadastro.html": renderRegister
+    "/projetos": renderProjects,
+    "/cadastro": renderRegister
 };
 
-function normalizePath(pathname) {
-    const basePath = "/ong-esperanca-html5";
+function getCurrentRoute() {
+    const hash = window.location.hash;
 
-    let path = pathname;
-
-    if (path.startsWith(basePath)) {
-        path = path.substring(basePath.length);
-    }
-
-    path = path.replace(/\/$/, "");
-
-    if (path === "") {
+    if (!hash || hash === "#") {
         return "/";
     }
 
-    return path;
+    return hash.replace(/^#/, "");
 }
 
-export function renderRoute(pathname = window.location.pathname) {
-    const path = normalizePath(pathname);
-    const render = routes[path] || renderHome;
+export function renderRoute() {
+    const route = getCurrentRoute();
+
+    const render = routes[route] || renderHome;
 
     const app = document.querySelector("#app");
 
@@ -49,7 +41,7 @@ export function renderRoute(pathname = window.location.pathname) {
 
     window.dispatchEvent(
         new CustomEvent("routeRendered", {
-            detail: { path }
+            detail: { route }
         })
     );
 }
@@ -64,18 +56,12 @@ export function setupNavigation() {
 
         event.preventDefault();
 
-        const url = new URL(link.href);
+        const route = link.dataset.route;
 
-        history.pushState(
-            {},
-            "",
-            url.pathname
-        );
-
-        renderRoute(url.pathname);
+        window.location.hash = route;
     });
 
-    window.addEventListener("popstate", () => {
+    window.addEventListener("hashchange", () => {
         renderRoute();
     });
 }
