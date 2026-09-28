@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupNavigation();
     renderRoute();
 
-    document.addEventListener("routeRendered", () => {
+    window.addEventListener("routeRendered", () => {
         setupForm();
     });
 });
