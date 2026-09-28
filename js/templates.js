@@ -33,7 +33,7 @@ export function renderHome() {
             <h2>Quem somos</h2>
 
             <img
-                src="../imagens/ong-esperanca.jpg"
+                src="imagens/ong-esperanca.jpg"
                 alt="Voluntários da ONG Esperança reunidos durante uma ação social"
                 width="800"
             >
@@ -146,7 +146,10 @@ export function renderProjects() {
             </ol>
 
             <p>
-                <a href="cadastro.html">
+                <a
+                    href="#/cadastro"
+                    data-route="/cadastro"
+                >
                     Quero ser voluntário
                 </a>
             </p>
@@ -161,7 +164,10 @@ export function renderProjects() {
             </p>
 
             <p>
-                <a href="cadastro.html">
+                <a
+                    href="#/cadastro"
+                    data-route="/cadastro"
+                >
                     Cadastre-se para participar
                 </a>
             </p>
@@ -373,9 +379,15 @@ export function renderRegister() {
                             required
                         >
                             <option value="">Selecione uma opção</option>
-                            <option value="voluntario">Trabalho voluntário</option>
-                            <option value="doacao">Realizar doações</option>
-                            <option value="ambos">Voluntariado e doações</option>
+                            <option value="voluntario">
+                                Trabalho voluntário
+                            </option>
+                            <option value="doacao">
+                                Realizar doações
+                            </option>
+                            <option value="ambos">
+                                Voluntariado e doações
+                            </option>
                         </select>
                         <small class="field-message"></small>
                     </p>
@@ -394,14 +406,28 @@ export function renderRegister() {
                 </fieldset>
 
                 <p class="form-actions">
-                    <button type="submit">Enviar cadastro</button>
-                    <button type="reset">Limpar formulário</button>
+
+                    <button type="submit">
+                        Enviar cadastro
+                    </button>
+
+                    <button type="reset">
+                        Limpar formulário
+                    </button>
+
                 </p>
 
-                <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+                <div
+                    id="form-feedback"
+                    class="form-feedback"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
             </form>
 
             <div id="registration-history"></div>
+
         </section>
     `;
 }
