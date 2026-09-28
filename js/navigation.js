@@ -17,13 +17,15 @@ function getCurrentRoute() {
         return "/";
     }
 
-    return hash.replace(/^#/, "");
+    const route = hash.replace(/^#/, "");
+
+    return routes[route] ? route : "/";
 }
 
 export function renderRoute() {
     const route = getCurrentRoute();
 
-    const render = routes[route] || renderHome;
+    const render = routes[route];
 
     const app = document.querySelector("#app");
 
@@ -48,6 +50,7 @@ export function renderRoute() {
 
 export function setupNavigation() {
     document.addEventListener("click", (event) => {
+
         const link = event.target.closest("a[data-route]");
 
         if (!link) {
@@ -57,6 +60,10 @@ export function setupNavigation() {
         event.preventDefault();
 
         const route = link.dataset.route;
+
+        if (route === window.location.hash.replace(/^#/, "")) {
+            return;
+        }
 
         window.location.hash = route;
     });
