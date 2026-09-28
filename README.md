@@ -7,12 +7,14 @@ A aplicação apresenta informações institucionais da ONG, seus projetos socia
 ## Índice
 
 * [Sobre o projeto](#sobre-o-projeto)
+* [Demonstração](#demonstração)
 * [Objetivos](#objetivos)
 * [Funcionalidades](#funcionalidades)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Estrutura do projeto](#estrutura-do-projeto)
 * [Pré-requisitos](#pré-requisitos)
 * [Instalação e execução local](#instalação-e-execução-local)
+* [Deploy](#deploy)
 * [Build e dependências](#build-e-dependências)
 * [Testes e validação](#testes-e-validação)
 * [Acessibilidade](#acessibilidade)
@@ -29,6 +31,14 @@ O projeto disponibiliza informações sobre a instituição, apresenta seus proj
 
 A aplicação foi desenvolvida utilizando tecnologias fundamentais do desenvolvimento front-end, sem dependência de frameworks para a estrutura, estilização ou lógica principal.
 
+## Demonstração
+
+A aplicação está publicada e pode ser acessada diretamente pelo **GitHub Pages**:
+
+**[ONG Esperança — Acessar aplicação](https://rodrigoma21.github.io/ong-esperanca-html5/)**
+
+A versão publicada permite visualizar a aplicação diretamente no navegador sem necessidade de instalação ou configuração local.
+
 ## Objetivos
 
 O projeto tem como principais objetivos:
@@ -40,7 +50,8 @@ O projeto tem como principais objetivos:
 * Aplicar conceitos básicos de **acessibilidade web**;
 * Desenvolver uma interface responsiva para diferentes tamanhos de tela;
 * Utilizar recursos nativos de validação de formulários;
-* Praticar organização e versionamento de um projeto utilizando Git e GitHub.
+* Praticar organização e versionamento de um projeto utilizando Git e GitHub;
+* Publicar a aplicação utilizando **GitHub Pages**.
 
 ## Funcionalidades
 
@@ -68,6 +79,7 @@ Entre as principais funcionalidades da aplicação estão:
 | **JavaScript**      | Interações, manipulação do DOM e comportamentos dinâmicos                                                  |
 | **Git**             | Controle de versão do projeto                                                                              |
 | **GitHub**          | Hospedagem do código e gerenciamento do repositório                                                        |
+| **GitHub Pages**    | Publicação da aplicação web                                                                                |
 | **W3C Validator**   | Validação da estrutura HTML                                                                                |
 
 ## Estrutura do projeto
@@ -153,6 +165,16 @@ Após instalar a extensão Live Server:
 4. Selecione **Open with Live Server**;
 5. O projeto será aberto no navegador através de um servidor local.
 
+## Deploy
+
+A aplicação foi publicada utilizando o **GitHub Pages**.
+
+A versão online está disponível em:
+
+**https://rodrigoma21.github.io/ong-esperanca-html5/**
+
+O GitHub Pages permite disponibilizar a aplicação diretamente a partir do repositório, tornando o projeto acessível pela web sem a necessidade de configurar um servidor próprio.
+
 ## Build e dependências
 
 O projeto é uma aplicação **front-end estática**, desenvolvida com HTML5, CSS3 e JavaScript.
@@ -171,7 +193,7 @@ ou:
 npm run build
 ```
 
-Para utilizar a aplicação, basta abrir o `index.html` diretamente no navegador ou executá-lo por meio de um servidor local.
+Para utilizar a aplicação, basta abrir o `index.html` diretamente no navegador, executá-lo por meio de um servidor local ou acessar a versão publicada no GitHub Pages.
 
 ## Testes e validação
 
@@ -241,6 +263,7 @@ Durante o desenvolvimento foram consideradas as seguintes práticas:
 * Reutilização de estilos CSS;
 * Separação da lógica JavaScript;
 * Controle de versão com Git;
+* Publicação da aplicação com GitHub Pages;
 * Documentação do projeto por meio deste README.
 
 ## Contexto acadêmico
@@ -255,6 +278,8 @@ A aplicação reúne conceitos de **HTML5, CSS3 e JavaScript**, permitindo aplic
 
 Projeto disponível no GitHub:
 
-**ONG Esperança — Projeto HTML5**
+**[ONG Esperança — Repositório](https://github.com/RodrigoMA21/ong-esperanca-html5)**
 
-https://github.com/RodrigoMA21/ong-esperanca-html5
+Aplicação publicada:
+
+**[ONG Esperança — GitHub Pages](https://rodrigoma21.github.io/ong-esperanca-html5/)**
