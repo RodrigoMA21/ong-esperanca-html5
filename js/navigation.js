@@ -7,12 +7,20 @@ import {
 const routes = {
     "/": renderHome,
     "/index.html": renderHome,
-    "/projetos.html": renderProjects,
-    "/cadastro.html": renderRegister
+    "/html/projetos.html": renderProjects,
+    "/html/cadastro.html": renderRegister
 };
 
 function normalizePath(pathname) {
-    const path = pathname.replace(/\/$/, "");
+    const basePath = "/ong-esperanca-html5";
+
+    let path = pathname;
+
+    if (path.startsWith(basePath)) {
+        path = path.substring(basePath.length);
+    }
+
+    path = path.replace(/\/$/, "");
 
     if (path === "") {
         return "/";
