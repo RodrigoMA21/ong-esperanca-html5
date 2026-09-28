@@ -4,7 +4,7 @@ Projeto acadêmico de desenvolvimento web para uma organização não governamen
 
 A aplicação apresenta informações institucionais da ONG, seus projetos sociais e um formulário de cadastro, utilizando uma estrutura separada entre HTML, CSS, JavaScript e imagens.
 
-## 📋 Índice
+## Índice
 
 * [Sobre o projeto](#sobre-o-projeto)
 * [Objetivos](#objetivos)
@@ -19,8 +19,9 @@ A aplicação apresenta informações institucionais da ONG, seus projetos socia
 * [Versionamento](#versionamento)
 * [Boas práticas adotadas](#boas-práticas-adotadas)
 * [Contexto acadêmico](#contexto-acadêmico)
+* [Autor](#autor)
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 A **ONG Esperança** é uma aplicação web acadêmica desenvolvida para representar a presença digital de uma organização social fictícia.
 
@@ -28,7 +29,7 @@ O projeto disponibiliza informações sobre a instituição, apresenta seus proj
 
 A aplicação foi desenvolvida utilizando tecnologias fundamentais do desenvolvimento front-end, sem dependência de frameworks para a estrutura, estilização ou lógica principal.
 
-## 🎯 Objetivos
+## Objetivos
 
 O projeto tem como principais objetivos:
 
@@ -41,7 +42,7 @@ O projeto tem como principais objetivos:
 * Utilizar recursos nativos de validação de formulários;
 * Praticar organização e versionamento de um projeto utilizando Git e GitHub.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 Entre as principais funcionalidades da aplicação estão:
 
@@ -54,10 +55,10 @@ Entre as principais funcionalidades da aplicação estão:
 * Navegação entre as páginas;
 * Interações implementadas com JavaScript;
 * Layout estilizado com CSS3;
-* Estrutura adaptada para diferentes dispositivos;
+* Interface adaptada para diferentes dispositivos;
 * Recursos básicos de acessibilidade.
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 | Tecnologia          | Utilização                                                                                                 |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -69,7 +70,7 @@ Entre as principais funcionalidades da aplicação estão:
 | **GitHub**          | Hospedagem do código e gerenciamento do repositório                                                        |
 | **W3C Validator**   | Validação da estrutura HTML                                                                                |
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 ong-esperanca-html5/
@@ -100,7 +101,7 @@ A separação dos arquivos procura manter responsabilidades distintas:
 * `index.html` — página inicial da aplicação;
 * `README.md` — documentação do projeto.
 
-## 💻 Pré-requisitos
+## Pré-requisitos
 
 Para executar o projeto localmente, não é necessário instalar frameworks ou bibliotecas externas.
 
@@ -116,7 +117,7 @@ Para executar o projeto localmente, não é necessário instalar frameworks ou b
 
 Recomenda-se utilizar um editor de código como o **Visual Studio Code** para facilitar o desenvolvimento e a execução local.
 
-## 🚀 Instalação e execução local
+## Instalação e execução local
 
 ### 1. Clonar o repositório
 
@@ -152,7 +153,7 @@ Após instalar a extensão Live Server:
 4. Selecione **Open with Live Server**;
 5. O projeto será aberto no navegador através de um servidor local.
 
-## ⚙️ Build e dependências
+## Build e dependências
 
 O projeto é uma aplicação **front-end estática**, desenvolvida com HTML5, CSS3 e JavaScript.
 
@@ -172,7 +173,7 @@ npm run build
 
 Para utilizar a aplicação, basta abrir o `index.html` diretamente no navegador ou executá-lo por meio de um servidor local.
 
-## 🧪 Testes e validação
+## Testes e validação
 
 A validação do projeto pode ser realizada em diferentes níveis.
 
@@ -199,7 +200,7 @@ A aplicação pode ser testada utilizando as ferramentas de desenvolvedor do nav
 * smartphones;
 * diferentes larguras de viewport.
 
-## ♿ Acessibilidade
+## Acessibilidade
 
 O projeto considera princípios básicos de acessibilidade durante a construção das páginas.
 
@@ -215,17 +216,19 @@ Entre as práticas utilizadas estão:
 
 O objetivo é tornar a aplicação mais compreensível tanto para usuários convencionais quanto para tecnologias assistivas.
 
-## 🔀 Versionamento
+## Versionamento
 
 O projeto utiliza **Git** como sistema de controle de versão e **GitHub** como plataforma de hospedagem do código-fonte.
 
 O desenvolvimento foi realizado de forma incremental, utilizando commits para registrar a evolução da aplicação e as alterações realizadas durante o desenvolvimento.
 
-A organização por commits permite acompanhar a evolução do projeto, identificar alterações e retornar a versões anteriores quando necessário.
+O projeto utiliza uma estrutura de branches para organizar o desenvolvimento, com a branch `develop` destinada às alterações e desenvolvimento antes da integração com a branch `main`.
+
+A organização por branches e commits permite acompanhar a evolução do projeto, identificar alterações e retornar a versões anteriores quando necessário.
 
 Recomenda-se manter os commits relacionados a alterações específicas e utilizar mensagens que descrevam de forma objetiva a mudança realizada.
 
-## ✅ Boas práticas adotadas
+## Boas práticas adotadas
 
 Durante o desenvolvimento foram consideradas as seguintes práticas:
 
@@ -240,17 +243,18 @@ Durante o desenvolvimento foram consideradas as seguintes práticas:
 * Controle de versão com Git;
 * Documentação do projeto por meio deste README.
 
-## 🎓 Contexto acadêmico
+## Contexto acadêmico
 
 Este projeto foi desenvolvido com finalidade acadêmica, servindo como exercício prático de desenvolvimento web front-end.
 
 A aplicação reúne conceitos de **HTML5, CSS3 e JavaScript**, permitindo aplicar conhecimentos relacionados à estruturação semântica, estilização, responsividade, acessibilidade, formulários, interação com o DOM e controle de versão.
 
-## 👤 Autor
+## Autor
 
 **RodrigoMA21**
 
 Projeto disponível no GitHub:
 
 **ONG Esperança — Projeto HTML5**
+
 https://github.com/RodrigoMA21/ong-esperanca-html5
