@@ -1,3 +1,8 @@
+/*
+ * Inicialização principal da aplicação.
+ * Responsável por configurar a navegação SPA
+ * e os comportamentos do formulário.
+ */
 import { setupNavigation, renderRoute } from "./navigation.js";
 import {
     saveRegistration,
