@@ -3,141 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ONG Esperança - Organização dedicada a ações sociais, voluntariado e solidariedade.">
-    <title>ONG Esperança | Início</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta
+        name="description"
+        content="ONG Esperança - Organização dedicada a ações sociais, voluntariado e solidariedade."
+    >
+
+    <title>ONG Esperança</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="site-header">
-    <div class="header-container">
+        <div class="header-container">
 
-        <h1 class="site-title">ONG Esperança</h1>
+            <h1 class="site-title">ONG Esperança</h1>
 
-        <input
-            type="checkbox"
-            id="menu-toggle"
-            class="menu-toggle"
-        >
-
-        <label for="menu-toggle" class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <nav class="main-navigation" aria-label="Navegação principal">
-            <ul class="nav-list">
-
-                <li class="nav-item">
-                    <a href="index.html" aria-current="page">
-                        Início
-                    </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a href="projetos.html">
-                        Projetos
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="projetos.html">
-                                Projetos sociais
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="cadastro.html">
-                                Seja voluntário
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a href="cadastro.html">
-                        Cadastre-se
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-    </div>
-</header>
-
-    <main>
-
-        <section id="apresentacao">
-            <h2>Quem somos</h2>
-
-            <img
-                src="img/ong-esperanca.jpg"
-                alt="Voluntários da ONG Esperança reunidos durante uma ação social"
-                width="800"
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="menu-toggle"
             >
 
-            <p>
-                A ONG Esperança é uma organização do terceiro setor dedicada
-                à promoção da solidariedade e ao desenvolvimento social.
-                Nosso trabalho busca contribuir para uma sociedade mais
-                justa por meio de projetos sociais e ações voluntárias.
-            </p>
+            <label
+                for="menu-toggle"
+                class="menu-button"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-            <p>
-                Atuamos em parceria com voluntários, doadores e comunidades,
-                desenvolvendo iniciativas que proporcionam apoio às pessoas
-                em situação de vulnerabilidade.
-            </p>
-        </section>
+            <nav
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
+                <ul class="nav-list">
 
-        <section id="missao">
-            <h2>Nossa missão</h2>
+                    <li class="nav-item">
+                        <a
+                            href="index.html"
+                            data-route
+                            aria-current="page"
+                        >
+                            Início
+                        </a>
+                    </li>
 
-            <p>
-                Promover ações sociais que contribuam para a melhoria da
-                qualidade de vida das comunidades atendidas, incentivando
-                a solidariedade, a cidadania e o voluntariado.
-            </p>
-        </section>
+                    <li class="nav-item dropdown">
+                        <a
+                            href="html/projetos.html"
+                            data-route
+                        >
+                            Projetos
+                        </a>
 
-        <section id="contato">
-            <h2>Entre em contato</h2>
+                        <ul class="dropdown-menu">
 
-            <address>
-                <p>
-                    <strong>Endereço:</strong>
-                    Rua da Solidariedade, 100 - Centro
-                </p>
+                            <li>
+                                <a
+                                    href="html/projetos.html"
+                                    data-route
+                                >
+                                    Projetos sociais
+                                </a>
+                            </li>
 
-                <p>
-                    <strong>Cidade:</strong>
-                    Caxias do Sul - RS
-                </p>
+                            <li>
+                                <a
+                                    href="html/cadastro.html"
+                                    data-route
+                                >
+                                    Seja voluntário
+                                </a>
+                            </li>
 
-                <p>
-                    <strong>Telefone:</strong>
-                    <a href="tel:+5554999999999">
-                        (54) 99999-9999
-                    </a>
-                </p>
+                        </ul>
+                    </li>
 
-                <p>
-                    <strong>E-mail:</strong>
-                    <a href="mailto:contato@ongesperanca.org.br">
-                        contato@ongesperanca.org.br
-                    </a>
-                </p>
-            </address>
-        </section>
+                    <li class="nav-item">
+                        <a
+                            href="html/cadastro.html"
+                            data-route
+                        >
+                            Cadastre-se
+                        </a>
+                    </li>
 
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main
+        id="app"
+        class="container"
+        aria-live="polite"
+    >
+        <!-- O conteúdo das páginas será renderizado pelo JavaScript. -->
     </main>
 
     <footer>
         <p>&copy; 2026 ONG Esperança. Todos os direitos reservados.</p>
     </footer>
+
+    <script
+        type="module"
+        src="js/main.js"
+    ></script>
 
 </body>
 </html>
